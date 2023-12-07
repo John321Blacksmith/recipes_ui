@@ -5,7 +5,10 @@ import { Provider } from 'react-redux';
 import './index.css';
 import { store } from  './store';
 import App from './App';
+<<<<<<< HEAD
 
+=======
+>>>>>>> beta
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,4 +20,7 @@ root.render(
     </BrowserRouter>
   </Provider>
 
+<<<<<<< HEAD
 );
+=======
+>>>>>>> beta
