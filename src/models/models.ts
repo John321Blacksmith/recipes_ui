@@ -44,27 +44,36 @@ export interface Ingredient{
 
 // Interfaces which provide models representation for different requests
 
+// recipe representation for the ListAPI View
+export interface RecipeCard{
+    pk: number
+    category: string
+    author: string
+    title: string
+    date_published: string
+    comments_amount: number
+}
+
+// recipe representation for the Detail API view
+export interface RecipeDetail extends Recipe{
+    comments: Comment[]
+}
+
 // Interface for a common list of recipes
 export interface IRecipesListResponse{
-    comments_amount: number
-    recipes: Recipe[]
+    recipes: RecipeCard[]
 }
 
 
 // Interface for the category-oriented recipes 
 export interface ICategoryRecipesResponse{
-    category: Category
-    comments_amount: number
-    recipes: Recipe[]
+    recipes: RecipeCard[]
 }
-
 
 // Interface for a single recipe object data
 export interface IRecipeDetailResponse{
-    recipe: Recipe
-    comments: Comment[]
+    recipe: RecipeDetail
 }
-
 
 // Interface for searching a recipe or a group of recipes
 export interface IRecipeSearchParams{
