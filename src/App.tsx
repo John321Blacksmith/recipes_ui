@@ -1,25 +1,8 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { MainPage } from './pages/Main';
-
-function App(){
-    return (
-        <>
-            <Routes>
-                <Route path='/' element={<MainPage/>}/>
-                <Route path='recipes/recipes/:pk' element={<RecipeDetailPage/>}/>
-                <Route path='recipes/:category' element={<CategoryRecipesPage/>}/>
-                <Route path='/:pk' element={<UserProfilePage/>}/>
-            </Routes>
-        </>
-    )
-=======
 import React from 'react';
 import { useState, useEffect } from 'react';
 import MenuTopComponent from './components/header/MenuTop';
 import MainPage from './pages/Main';
-
+import CategoryRecipesPage from './pages/CategoryRecipe';
 
 function App(){
   return (
@@ -63,7 +46,6 @@ function App(){
       </div>
     </>
   );
->>>>>>> beta
 }
 
 export default App;
