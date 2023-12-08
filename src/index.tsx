@@ -1,14 +1,12 @@
 import React from 'react';
+import { store } from './store/store';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import { store } from  './store';
-import App from './App';
-<<<<<<< HEAD
 
-=======
->>>>>>> beta
+import App from './App';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,7 +18,4 @@ root.render(
     </BrowserRouter>
   </Provider>
 
-<<<<<<< HEAD
-);
-=======
->>>>>>> beta
+); 
